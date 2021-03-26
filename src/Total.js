@@ -1,10 +1,15 @@
-import React from 'react';
-
 export default function Total(props) {
-    //no destructuring
-    return(
-        <div>
-            <p>Number of exercises {props.part1.exercises+props.part2.exercises+props.part3.exercises}</p>
-        </div>
-    );
-}
+  let suma = 0;
+  return (
+    <div>
+      {props.parts.map((ejem, index) => {
+        suma = suma + ejem.exercises;
+      })}
+      <div>
+        <p>Number of exercises {suma}</p>
+      </div>
+    </div>
+  );
+};
+
+
