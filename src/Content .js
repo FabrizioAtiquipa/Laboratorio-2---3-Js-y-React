@@ -7,7 +7,7 @@ export default function Content(props) {
         <div>
             <Part enunciado={props.part1} num={props.exercises1} />
             <Part enunciado={props.part2} num={props.exercises2} />
-            <Part enunciado={props.part2} num={props.exercises3} />
+            <Part enunciado={props.part3} num={props.exercises3} />
         </div>
     );
 }
