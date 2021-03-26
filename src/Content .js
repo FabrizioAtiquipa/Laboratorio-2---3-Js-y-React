@@ -1,12 +1,13 @@
 import React from 'react';
+import Part from './Part';
 
 export default function Content(props) {
 
     return(
         <div>
-            <p>{props.part1} {props.exercises1}</p>
-            <p>{props.part2} {props.exercises2}</p>
-            <p>{props.part3} {props.exercises3}</p>
+            <Part enunciado={props.part1} num={props.exercises1} />
+            <Part enunciado={props.part2} num={props.exercises2} />
+            <Part enunciado={props.part2} num={props.exercises3} />
         </div>
     );
 }
