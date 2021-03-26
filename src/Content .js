@@ -2,12 +2,14 @@ import React from 'react';
 import Part from './Part';
 
 export default function Content(props) {
-
+    //destructuring
+    const{part1, part2, part3}=props
+    const{name, exercises}=part1
     return(
         <div>
-            <Part enunciado={props.part1} num={props.exercises1} />
-            <Part enunciado={props.part2} num={props.exercises2} />
-            <Part enunciado={props.part3} num={props.exercises3} />
+            <Part enunciado={name} num={exercises} />
+            <Part enunciado={part2.name} num={part2.exercises} />
+            <Part enunciado={part3.name} num={part3.exercises} />
         </div>
     );
 }
